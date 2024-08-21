@@ -47,15 +47,24 @@
   "3": {
     "endpoint": "Add an artist",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/artists",
+      "headers": {
+        "Content-Type" : "application/json"
+      },
+      "body": {
+        "name": true
+      }
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type" : "application/json"
+      },
+      "statusCode": 201,
+      "body": {
+        "name" : true,
+        "artistId": true
+      }
     }
   },
   "4": {
