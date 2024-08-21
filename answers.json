@@ -169,15 +169,25 @@
   "8": {
     "endpoint": "Add an album to a specific artist based on artistId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/artists/:artistId/albums",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": true
+      }
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 201,
+      "body": {
+        "name": true,
+        "albumId": true,
+        "artistId": true
+      }
     }
   },
   "9": {
