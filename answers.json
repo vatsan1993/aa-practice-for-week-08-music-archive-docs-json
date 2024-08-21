@@ -218,29 +218,43 @@
   "10": {
     "endpoint": "Delete a specified album by albumId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "DELETE",
+      "URL": "/albums/:albumId",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": {
+        "message": true
+      }
     }
   },
   "11": {
     "endpoint": "Get all songs of a specific artist based on artistId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/artists/:artistId/songs",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body":[
+        {
+            "name": true,
+            "lyrics": true,
+            "trackNumber": true,
+            "songId": true,
+            "albumId": true
+        }
+      ]
     }
   },
   "12": {
