@@ -260,15 +260,25 @@
   "12": {
     "endpoint": "Get all songs of a specific album based on albumId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/albums/:albumId/songs",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": [
+        {
+            "name": true,
+            "lyrics": true,
+            "trackNumber": true,
+            "songId": true,
+            "albumId": true
+        }
+      ]
     }
   },
   "13": {
