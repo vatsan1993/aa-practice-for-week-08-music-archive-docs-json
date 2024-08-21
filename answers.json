@@ -2,15 +2,20 @@
   "1": {
     "endpoint": "Get all the artists",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/artists",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": [{
+        "name": true,
+        "artistId" : true
+      }]
     }
   },
   "2": {
