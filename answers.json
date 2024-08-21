@@ -193,15 +193,26 @@
   "9": {
     "endpoint": "Edit a specified album by albumId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "PATCH",
+      "URL": "/albums/:albumId",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": true
+      }
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "application/json"
+      } ,
+      "statusCode": 200,
+      "body": {
+        "name": true,
+        "albumId": true,
+        "artistId": true,
+        "updatedAt": true
+      }
     }
   },
   "10": {
